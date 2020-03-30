@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Online Quiz App</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" id="highscore" href="scores.html">View Highscores</a></div>
+            <div class="nav navbar-nav navbar-right" id="time">Timer: 0</div>
+        </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-10" id="main-div">
+                <h2 id="question"></h2>
+                <div id="options">
+                    <button type="button" class="btn btn-dark" id="optionOne"></button>
+                    <button type="button" class="btn btn-dark" id="optionTwo"></button>
+                    <button type="button" class="btn btn-dark" id="optionThree"></button>
+                    <button type="button" class="btn btn-dark" id="optionFour"></button>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-6" id="buttonDiv">
+				<button type="button" class="btn btn-dark" id="startButton">Start Quiz</button>
+                    <div id="message">
+                        <h1>Coding Quiz Challenge</h1>
+                        <p>Try to answer the folowing code-related questions within the time limit. Keep in mind that
+                            incorrect
+                            answers will penalize your score/time by ten seconds!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="quizQuestions.js"></script>
+    <script src="quizScript.js"></script>
+    </div>
+</body>
+
+</html>
